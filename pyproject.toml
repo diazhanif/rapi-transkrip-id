@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rapi-transkrip-id"
+version = "0.1.0"
+description = "CLI lokal untuk membersihkan kata jeda dari transkrip Bahasa Indonesia"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "rapi-transkrip-id contributors" }]
+classifiers = [
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.scripts]
+rapi-transkrip-id = "rapi_transkrip.core:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
